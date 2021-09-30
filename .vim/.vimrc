@@ -25,6 +25,10 @@ filetype plugin on
 		set wildmenu
 	" Turns off that godforsaken windows bell
 		set noerrorbells
+	" Ensures backspace deletes in --INSERT--
+		set backspace=indent,eol,start
+    " Turns off the invisible characters
+    "   set nolist
 	" Enables the mouse for scrolling
 "		set mouse=a
 	"Gives a title
