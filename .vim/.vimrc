@@ -25,11 +25,12 @@ filetype plugin on
 		set wildmenu
 	" Turns off that godforsaken windows bell
 		set noerrorbells
-	" Ensures backspace deletes in --INSERT--
-		set backspace=indent,eol,start
-    " Turns off the invisible characters
-    "   set nolist
 	" Enables the mouse for scrolling
 "		set mouse=a
 	"Gives a title
 		set title
+	"Will load a file template when creating a new file and recognizes the
+	"filetype
+		autocmd BufNewFile * silent! 0r $HOME/.vim/templates/%:e.tpl
+		autocmd BufNewFile * $d
+		autocmd BufNewFile * 1
